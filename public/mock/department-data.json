@@ -1,0 +1,28 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": 1,
+      "label": "研发部",
+      "children": [
+        { "id": 4, "label": "前端组" },
+        { "id": 5, "label": "后端组" },
+        { "id": 6, "label": "产品组" }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "市场部",
+      "children": [
+        { "id": 7, "label": "销售组" },
+        { "id": 8, "label": "设计组" },
+        { "id": 9, "label": "售后组" }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "总经办"
+    }
+  ],
+  "msg": "success"
+}

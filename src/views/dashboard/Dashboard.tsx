@@ -2,7 +2,6 @@ import { sleep } from "radash";
 import { lazy, Suspense, useEffect, useState } from "react";
 import { Button, DatePicker } from "antd";
 import { useAppSelector } from "../../hooks";
-import "./style.scss";
 
 const LazyTest = lazy(() => delayForDemo(import("./lazy-test/LazyTest.tsx")));
 
@@ -21,11 +20,11 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="dashboard test">
+    <div className="dashboard">
       <DatePicker />
       <Button type="primary">范德萨发</Button>[{data.id}]dashboard page.
       {data.name}
-      {userInfo.name}
+      {JSON.stringify(userInfo)}
       <Suspense fallback={<div>loading...</div>}>
         <LazyTest />
       </Suspense>

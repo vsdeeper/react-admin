@@ -1,0 +1,173 @@
+{
+  "code": 0,
+  "data": {
+    "list": [
+      {
+        "id": 1,
+        "military_commander": "白起",
+        "command": 100,
+        "force": 90,
+        "intelligence": 72,
+        "politics": 12,
+        "personality": "斗将,勇将,威风,一心,恶名"
+      },
+      {
+        "id": 2,
+        "military_commander": "司马懿",
+        "command": 99,
+        "force": 63,
+        "intelligence": 96,
+        "politics": 92,
+        "personality": "虚实,疾走,地利,泰然,慎重"
+      },
+      {
+        "id": 3,
+        "military_commander": "乐毅",
+        "command": 99,
+        "force": 76,
+        "intelligence": 93,
+        "politics": 88,
+        "personality": "神将,神眼,英名,求心,柱石"
+      },
+      {
+        "id": 4,
+        "military_commander": "曹操",
+        "command": 98,
+        "force": 72,
+        "intelligence": 91,
+        "politics": 94,
+        "personality": "奸雄,英名,诗韵,屯田,煽动"
+      },
+      {
+        "id": 5,
+        "military_commander": "项籍",
+        "command": 98,
+        "force": 100,
+        "intelligence": 66,
+        "politics": 19,
+        "personality": "斗将,神威,一骑,胆量,粗暴"
+      },
+      {
+        "id": 6,
+        "military_commander": "周瑜",
+        "command": 97,
+        "force": 71,
+        "intelligence": 96,
+        "politics": 86,
+        "personality": "火神,英名,奏乐,水站,督厉"
+      },
+      {
+        "id": 7,
+        "military_commander": "关羽",
+        "command": 96,
+        "force": 97,
+        "intelligence": 75,
+        "politics": 63,
+        "personality": "神将,一骑,英名,求心,柱石"
+      },
+      {
+        "id": 8,
+        "military_commander": "陆逊",
+        "command": 96,
+        "force": 69,
+        "intelligence": 95,
+        "politics": 88,
+        "personality": "神机,水战,火攻,沉着,柱石"
+      },
+      {
+        "id": 9,
+        "military_commander": "李牧",
+        "command": 96,
+        "force": 74,
+        "intelligence": 90,
+        "politics": 67,
+        "personality": "虚实,泰然,筑城,地利,坚牢"
+      },
+      {
+        "id": 10,
+        "military_commander": "张辽",
+        "command": 95,
+        "force": 92,
+        "intelligence": 78,
+        "politics": 58,
+        "personality": "威风,豪杰,胆量,长驱,果敢"
+      },
+      {
+        "id": 11,
+        "military_commander": "吕布",
+        "command": 95,
+        "force": 100,
+        "intelligence": 26,
+        "politics": 13,
+        "personality": "飞将,一骑,莽撞,恶名,短虑"
+      },
+      {
+        "id": 12,
+        "military_commander": "王翦",
+        "command": 95,
+        "force": 78,
+        "intelligence": 84,
+        "politics": 69,
+        "personality": "洞察,督将,泰然,明镜,慎重"
+      },
+      {
+        "id": 13,
+        "military_commander": "呼延灼",
+        "command": 95,
+        "force": 91,
+        "intelligence": 75,
+        "politics": 60,
+        "personality": "神威,豪杰,果敢,火攻,再起"
+      },
+      {
+        "id": 14,
+        "military_commander": "孙坚",
+        "command": 94,
+        "force": 90,
+        "intelligence": 77,
+        "politics": 72,
+        "personality": "骁将,威风,水战,果敢,直率"
+      },
+      {
+        "id": 15,
+        "military_commander": "邓艾",
+        "command": 94,
+        "force": 87,
+        "intelligence": 89,
+        "politics": 81,
+        "personality": "地利,疾走,长驱,屯田,农政"
+      },
+      {
+        "id": 16,
+        "military_commander": "吴起",
+        "command": 94,
+        "force": 67,
+        "intelligence": 96,
+        "politics": 95,
+        "personality": "神机,王佐,一心,策士,傲慢"
+      },
+      {
+        "id": 17,
+        "military_commander": "诸葛亮",
+        "command": 93,
+        "force": 38,
+        "intelligence": 100,
+        "politics": 96,
+        "personality": "卧龙,石兵,发明,王佐,眼力"
+      },
+      {
+        "id": 18,
+        "military_commander": "孙策",
+        "command": 93,
+        "force": 92,
+        "intelligence": 69,
+        "politics": 68,
+        "personality": "勇将,英名,豪杰,果敢,鲁莽"
+      }
+    ],
+    "pageIndex": 1,
+    "pageSize": 20,
+    "total": 100
+  },
+  "msg": "success"
+}

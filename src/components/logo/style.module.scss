@@ -1,0 +1,25 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  & > div[class*="-image"] {
+    padding: 0 5px;
+    img {
+      transition: width 0.3s ease-in-out 0s;
+    }
+  }
+  & > span {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    margin-left: 5px;
+    color: var(--ant-layout-light-sider-bg);
+  }
+}

@@ -1,0 +1,11 @@
+/* 全局样式变量 */
+:root {
+  --vs-c-white: #ffffff;
+  --vs-c-black: #181818;
+}
+
+/* 项目的语义颜色变量 */
+:root {
+  --color-background: var(--vs-c-white);
+  --color-text: var(--vs-c-black);
+}

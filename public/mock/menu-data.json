@@ -1,0 +1,127 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "menuID": 1,
+      "menuName": "仪表板",
+      "menuType": 2,
+      "menuKey": "dashboard",
+      "path": "/dashboard",
+      "icon": "Menu",
+      "visible": 1
+    },
+    {
+      "menuID": 2,
+      "menuName": "系统管理",
+      "menuType": 1,
+      "menuKey": "system",
+      "path": "/system",
+      "icon": "Setting",
+      "visible": 1,
+      "children": [
+        {
+          "menuID": 3,
+          "menuName": "用户管理",
+          "menuType": 2,
+          "menuKey": "system:user",
+          "path": "/system/user",
+          "visible": 1,
+          "isExternalLink": 2,
+          "children": [
+            {
+              "menuID": 10,
+              "menuName": "新增",
+              "menuType": 3,
+              "menuKey": "system:user:add"
+            },
+            {
+              "menuID": 11,
+              "menuName": "编辑",
+              "menuType": 3,
+              "menuKey": "system:user:edit"
+            },
+            {
+              "menuID": 12,
+              "menuName": "复制",
+              "menuType": 3,
+              "menuKey": "system:user:copy"
+            },
+            {
+              "menuID": 13,
+              "menuName": "删除",
+              "menuType": 3,
+              "menuKey": "system:user:delete"
+            }
+          ]
+        },
+        {
+          "menuID": 4,
+          "menuName": "角色管理",
+          "menuType": 2,
+          "menuKey": "system:role",
+          "path": "/system/role",
+          "visible": 1,
+          "isExternalLink": 2
+        },
+        {
+          "menuID": 5,
+          "menuName": "菜单管理",
+          "menuType": 2,
+          "menuKey": "system:menu",
+          "path": "/system/menu",
+          "visible": 1,
+          "isExternalLink": 2
+        },
+        {
+          "menuID": 6,
+          "menuName": "字典管理",
+          "menuType": 2,
+          "menuKey": "system:dict",
+          "path": "/system/dict",
+          "visible": 1,
+          "isExternalLink": 2
+        },
+        {
+          "menuID": 7,
+          "menuName": "日志管理",
+          "menuType": 1,
+          "menuKey": "system:log",
+          "path": "/system/log",
+          "icon": "Edit",
+          "visible": 1,
+          "isExternalLink": 2,
+          "children": [
+            {
+              "menuID": 8,
+              "menuName": "操作日志",
+              "menuType": 2,
+              "menuKey": "system:log:operationLog",
+              "path": "/system/log/operationLog",
+              "visible": 1,
+              "isExternalLink": 2
+            },
+            {
+              "menuID": 9,
+              "menuName": "登录日志",
+              "menuType": 2,
+              "menuKey": "system:log:loginLog",
+              "path": "/system/log/loginLog",
+              "visible": 1,
+              "isExternalLink": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "menuID": 999,
+      "menuName": "Example",
+      "menuType": 2,
+      "menuKey": "example",
+      "path": "/example",
+      "icon": "Eleme",
+      "visible": 1
+    }
+  ],
+  "msg": "success"
+}
