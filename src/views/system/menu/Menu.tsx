@@ -1,6 +1,6 @@
 import { Empty } from "antd";
 
-export default function User() {
+export default function Menu() {
   return (
     <Empty
       description={false}

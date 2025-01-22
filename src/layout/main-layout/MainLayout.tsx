@@ -7,10 +7,14 @@ import { Logo } from "@/components";
 import { useAppSelector } from "@/hooks";
 import style from "./style.module.scss";
 import antIconMap from "./ant-icon-map";
+import MessageBell from "./message-bell/MessageBell";
+import { queryMessage } from "@/api/global";
+import UserAvatar from "./user-avatar/UserAvatar";
 
 export default function MainLayout() {
   const { Sider, Header, Content, Footer } = Layout;
   const [collapsed, setCollapsed] = useState(false);
+  const [messageData, setMessageData] = useState<Record<string, any>[]>([]);
   const { menu } = useAppSelector((state) => state.global);
   const location = useLocation();
   const [selectedKeys, setSelectedKeys] = useState<string[]>();
@@ -36,13 +40,14 @@ export default function MainLayout() {
     });
   };
 
-  const handleClick = ({ key }: { key: string }) => {
+  const onClickMenu = ({ key }: { key: string }) => {
     setSelectedKeys([key]);
     navigate(`${key}`);
   };
 
   useEffect(() => {
     setSelectedKeys([location.pathname]);
+    queryMessage().then((res) => setMessageData(res ?? []));
   }, [location.pathname]);
 
   return (
@@ -54,7 +59,7 @@ export default function MainLayout() {
           mode="inline"
           selectedKeys={selectedKeys}
           items={generateMenuItems(menu)}
-          onClick={handleClick}
+          onClick={onClickMenu}
         />
       </Sider>
       <Layout>
@@ -64,6 +69,10 @@ export default function MainLayout() {
             icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
             onClick={() => setCollapsed(!collapsed)}
           />
+          <div className={style["top-right-side"]}>
+            <MessageBell data={messageData} />
+            <UserAvatar />
+          </div>
         </Header>
         <Content className={style.content}>
           <Outlet />

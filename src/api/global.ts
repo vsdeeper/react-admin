@@ -31,3 +31,17 @@ export async function queryMenu() {
     console.error("queryMenuData ->", error);
   }
 }
+
+export async function queryMessage() {
+  try {
+    const { data } = await http({
+      baseURL: "/",
+      method: "get",
+      url: "/mock/message.json?t=" + +new Date(),
+    });
+    await sleep(1000);
+    return data as Record<string, any>[];
+  } catch (error) {
+    console.error("queryMessage ->", error);
+  }
+}

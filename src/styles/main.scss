@@ -11,36 +11,9 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--vs-bg-color-page);
 }
 
 #root {
   height: 100vh;
   font-weight: normal;
-}
-
-// 自适应弹框
-.adaptive-dialog {
-  --vs-dialog-width: calc(100% - 2 * var(--vs-main-padding)) !important;
-  --vs-dialog-max-width: 950px;
-  max-width: var(--vs-dialog-max-width);
-}
-
-div[class*="-divider"].nodata {
-  div[class*="-divider__text"] {
-    color: var(--vs-text-color-secondary);
-  }
-}
-
-div[class*="-form"].auto-layout {
-  :deep(.vs-input-number),
-  :deep(.vs-date-editor),
-  :deep(.vs-cascader) {
-    width: 100%;
-  }
-  :deep(.vs-input-number) {
-    .vs-input__inner {
-      text-align: left;
-    }
-  }
 }

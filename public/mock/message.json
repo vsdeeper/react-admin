@@ -1,0 +1,51 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": 1,
+      "title": "收到新消息",
+      "desc": "影子给你发了新消息",
+      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg",
+      "read": false
+    },
+    {
+      "id": 2,
+      "title": "收到新消息",
+      "desc": "影子完成了审批",
+      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg",
+      "read": false
+    },
+    {
+      "id": 3,
+      "title": "收到新消息",
+      "desc": "有个流程需要您审批",
+      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg",
+      "read": false
+    },
+    {
+      "id": 4,
+      "title": "收到新消息",
+      "desc": "有个流程需要您审批",
+      "read": true
+    },
+    {
+      "id": 5,
+      "title": "收到新消息",
+      "desc": "有个流程需要您审批",
+      "read": true
+    },
+    {
+      "id": 6,
+      "title": "收到新消息",
+      "desc": "有个流程需要您审批",
+      "read": true
+    },
+    {
+      "id": 7,
+      "title": "收到新消息",
+      "desc": "有个流程需要您审批",
+      "read": true
+    }
+  ],
+  "msg": "success"
+}

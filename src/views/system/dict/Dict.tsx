@@ -1,6 +1,6 @@
 import { Empty } from "antd";
 
-export default function User() {
+export default function Dict() {
   return (
     <Empty
       description={false}
