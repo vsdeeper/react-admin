@@ -1,11 +1,12 @@
-import { Button, Layout, Menu, Typography } from "antd";
-import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
-import { Outlet, useLocation, useNavigate } from "react-router";
-import { Logo } from "@/components";
-import style from "./style.module.scss";
 import { useEffect, useState } from "react";
+import { Outlet, useLocation, useNavigate } from "react-router";
+import { Button, Layout, Menu, Typography } from "antd";
+import type { MenuItemType, SubMenuType } from "antd/es/menu/interface";
+import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
+import { Logo } from "@/components";
 import { useAppSelector } from "@/hooks";
-import type { SubMenuType } from "antd/es/menu/interface";
+import style from "./style.module.scss";
+import antIconMap from "./ant-icon-map";
 
 export default function MainLayout() {
   const { Sider, Header, Content, Footer } = Layout;
@@ -14,18 +15,27 @@ export default function MainLayout() {
   const location = useLocation();
   const [selectedKeys, setSelectedKeys] = useState<string[]>();
   const navigate = useNavigate();
+
   const generateMenuItems = (data: VsMenuDataItem[]) => {
     return data.map((item) => {
-      const obj = {
+      const obj: MenuItemType | SubMenuType = {
         key: item.path,
         label: item.menuName,
       };
-      if (item.menuType === 1 && item.children?.length /** 模块，且有子集 */) {
-        (obj as SubMenuType).children = generateMenuItems(item.children);
+      if (item.menuType === 1 /** 模块 */) {
+        if (item.icon) {
+          obj.icon = antIconMap[item.icon];
+        }
+        if (item.children?.length /** 有子集 */) {
+          (obj as SubMenuType).children = generateMenuItems(item.children);
+        }
+      } else if (item.menuType === 2 /** 菜单 */) {
+        obj.icon = item.icon ? antIconMap[item.icon] : antIconMap.FireOutlined;
       }
       return obj;
     });
   };
+
   const handleClick = ({ key }: { key: string }) => {
     setSelectedKeys([key]);
     navigate(`${key}`);

@@ -7,7 +7,7 @@
       "menuType": 2,
       "menuKey": "dashboard",
       "path": "/dashboard",
-      "icon": "Menu",
+      "icon": "AppstoreOutlined",
       "visible": 1
     },
     {
@@ -16,7 +16,7 @@
       "menuType": 1,
       "menuKey": "system",
       "path": "/system",
-      "icon": "Setting",
+      "icon": "SettingOutlined",
       "visible": 1,
       "children": [
         {
@@ -87,7 +87,7 @@
           "menuType": 1,
           "menuKey": "system:log",
           "path": "/system/log",
-          "icon": "Edit",
+          "icon": "FormOutlined",
           "visible": 1,
           "isExternalLink": 2,
           "children": [
@@ -119,7 +119,7 @@
       "menuType": 2,
       "menuKey": "example",
       "path": "/example",
-      "icon": "Eleme",
+      "icon": "AntDesignOutlined",
       "visible": 1
     }
   ],
