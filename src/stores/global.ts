@@ -10,7 +10,6 @@ export const globalSlice = createSlice({
   initialState: {
     userInfo: {},
     menu: [],
-    routes: [],
   } as GlobalState,
   reducers: {
     storeUserInfo: (state, { payload }) => {
